@@ -44,6 +44,9 @@ header p:last-of-type {
 .center-items {
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -86,11 +89,25 @@ section .description {
   }
 
   section {
-    margin-right: 30px;
+    margin-right: 50px;
   }
 
   .calculator {
     margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1399px) {
+  .center-items {
+    flex-direction: row;
+  }
+
+  .team-builder {
+    margin-right: 50px;
+  }
+
+  .karma {
     margin-left: 0;
   }
 }
