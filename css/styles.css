@@ -13,7 +13,11 @@ body {
   font-weight: 200;
   line-height: 2;
   font-size: 15px;
-  color: #444;
+  color: hsl(229, 6%, 66%);
+}
+
+h1, h2 {
+  color: hsl(234, 12%, 34%);
 }
 
 header {
@@ -34,4 +38,47 @@ header h1 {
 
 header p:last-of-type {
   font-size: 1rem;
+}
+
+section {
+  padding: 7% 7% 35%;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.center-items {
+  margin: 0;
+  padding: 0;
+}
+
+section .heading {
+  margin: 0;
+}
+
+section .description {
+  margin: 0;
+}
+
+.supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+  background: no-repeat url('../images/icon-supervisor.svg') 90% 90%;
+}
+.team-builder {
+  border-top: 4px solid hsl(0, 78%, 62%);
+  background: no-repeat url('../images/icon-team-builder.svg') 90% 90%;
+}
+.karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+  background: no-repeat url('../images/icon-karma.svg') 90% 90%;
+}
+.calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+  background: no-repeat url('../images/icon-calculator.svg') 90% 90%;
 }
